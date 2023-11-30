@@ -1,0 +1,300 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: darkgrey;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.app-bar__brand a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+#menu {
+  list-style: none;
+  display: flex;
+}
+
+#menu li {
+  margin: 0 10px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.hero {
+  border: 10px solid #fff;
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    display: block;
+    object-fit: cover;
+    height: 400px;
+    margin: auto;
+    width: 100%;
+    min-width: 1000px;
+  }
+}
+
+@media (min-width : 480px) {
+  #hamburger {
+    display: none;
+  }
+}
+
+@media (max-width : 480px) {
+  ul#menu {
+    display: none;
+  }
+  #hamburger {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+h3 {
+  text-align: center;
+}
+
+.restaurant-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.restaurant-item img {
+  width: 100%;
+  height: auto;
+}
+
+.restaurant-item h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.restaurant-item p {
+  margin: 5px 0;
+}
+
+footer {
+  bottom: 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo a {
+  display: inline-block;
+  padding: 4px;
+  min-width: 44px;
+  min-height: 44px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+@media (min-width : 480px){
+  main#mainContent{
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+  }
+  ul#menu{
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 700px) {
+  ul#menu {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    min-width: 100px; 
+  }
+
+  ul#menu li {
+    margin: 10px 0;
+  }
+}
+
+
+#menu {
+  list-style: none;
+  display: flex;
+}
+
+#menu li {
+  margin: 0 10px;
+}
+
+#menu a {
+  padding: 10px;
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#drawer {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  transform: translate(-250px, 0);
+  transition: transform 0.3s ease-in-out;
+  background-color: #111;
+}
+
+#drawer.open {
+  transform: translate(0, 0);
+}
+
+main {
+  padding: 0px;
+}
+
+#drawer ul {
+  list-style-type: none;
+  padding: 0 16px;
+}
+
+#drawer li {
+  padding: 5px 0px;
+}
+
+#drawer a {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+#hamburger {
+  padding-left: 5px;
+  font-size: 32px;
+  text-decoration: none;
+  color: white;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+button {
+  background-color: #333;
+}
+
+h2 a {
+  display: block;
+  width: fit-content;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 4px;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.restaurants {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px; 
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.restaurant__title {
+  text-align: center;
+}
+
+.restaurant__poster {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
